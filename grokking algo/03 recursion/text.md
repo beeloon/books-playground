@@ -25,8 +25,8 @@ def look_for_key(main_box):
 
 Recursion illustration on factorial function
 
-![fact part 1](../shared/fact1-1.png)
-![fact part 1](../shared/fact1-2.png)
+![fact part 1](../shared/images/03-fact1-1.png)
+![fact part 1](../shared/images/03-fact1-2.png)
 
 ## Recap:
 - Recursion is when a function calls itself.

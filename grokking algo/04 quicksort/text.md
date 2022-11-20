@@ -3,8 +3,8 @@
 
 Example of recursion work on sum function:
 
-![sum rec 1.1](../shared/sum-recursion-ex1.1.png)
-![sum rec 1.2](../shared/sum-recursion-ex1.2.png)
+![sum rec 1.1](../shared/images/04-sum-recursion-ex1.1.png)
+![sum rec 1.2](../shared/images/04-sum-recursion-ex1.2.png)
 
 
 ### Tip
@@ -25,3 +25,26 @@ sum arr = if arr == []
     else (head arr) + (sum (tail arr))
 ```
 But the irst deinition is easier to read. Because Haskell makes heavy use of recursion, it includes all kinds of niceties like this to make recursion easy. If you like recursion, or you’re interested in learning a new language, check out Haskell.
+
+
+### Inductive proofs
+You just got a sneak peak into inductive proofs! Inductive proofs are one way to prove that your algorithm works. Each inductive proof has two steps: the base case and the inductive case. Sound familiar? For example, suppose I want to prove that I can climb to the top of a ladder. In the inductive case, if my legs are on a rung, I can put my legs on the next rung. So if I’m on rung 2, I can climb to rung 3. hat’s the inductive case. For the base case, I’ll say that my legs are on rung 1. herefore, I can climb the entire ladder, going up one rung at a time.
+You use similar reasoning for quicksort. In the base case, I showed that the algorithm works for the base case: arrays of size 0 and 1. In the inductive case, I showed that if quicksort works for an array of size 1, it will work for an array of size 2. And if it works for arrays of size 2, it will work for arrays of size 3, and so on. hen I can say that quicksort will work for all arrays of any size. I won’t go deeper into inductive proofs here, but they’re fun and go hand-in-hand with D&C.
+
+
+### Big O notation revisited
+
+![big-o-revised](../shared/images/04-big-o-revised.png)
+
+
+When you write Big O notation like O(n), it really means this.
+
+![big-o-revised](../shared/images/04-big-o-constant.png)]
+
+c is some ixed amount of time that your algorithm takes. It’s called the constant. 
+
+## Recap:
+- D&C works by breaking a problem down into smaller and smaller pieces. If you’re using D&C on a list, the base case is probably an empty array or an array with one element.
+- If you’re implementing quicksort, choose a random element as the pivot. he average runtime of quicksort is O(n log n)!
+- he constant in Big O notation can matter sometimes. hat’s why quicksort is faster than merge sort.
+- he constant almost never matters for simple search versus binary search, because O(log n) is so much faster than O(n) when your list gets big.
