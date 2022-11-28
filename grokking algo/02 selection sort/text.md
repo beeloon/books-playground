@@ -1,4 +1,4 @@
-# ch2. selection sort
+# Selection sort
 
 ### Checking fewer elements each time
 Maybe you’re wondering: as you go through the operations, the number of elements you have to check keeps decreasing. Eventually, you’re down to having to check just one element. So how can the run time still be O(n2)? hat’s a good question, and the answer has to do with constants in Big O notation. I’ll get into this more in chapter 4, but here’s the gist.

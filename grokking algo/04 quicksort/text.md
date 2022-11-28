@@ -1,3 +1,5 @@
+# Quicksort
+
 ## Euclid’s algorithm
 “If you ind the biggest box that will work for this size, that will be the biggest box that will work for the entire farm.” If it’s not obvious to you why this statement is true, don’t worry. It isn’t obvious. Unfortunately, the proof for why it works is a little too long to include in this book, so you’ll just have to believe me that it works. If you want to understand the proof, look up Euclid’s algorithm. he Khan academy has a good explanation here: https://www.khanacademy.org/computing/computer-science/ cryptography/modarithmetic/a/the-euclidean-algorithm.
 
